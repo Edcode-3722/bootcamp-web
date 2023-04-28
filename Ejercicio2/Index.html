@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+
+    <section class="formulario">
+        <h2>Registrate</h2>
+        <form action="enviar.php" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Nombre" name="nombre" required>
+            <br>
+            <label for="email">Email</label>
+            <input type="text" placeholder="Email" name="email">
+            <br>
+            <label for="password">Password</label>
+            <input type="text" placeholder="Password" name="password">
+            <fieldset>
+                <legend>Genero</legend>
+                <input type="radio" name="genero" value="Masculino" required>
+                <label for="genero">Masculino</label><br>
+                <input type="radio" name="genero" value="Femenino" required>
+                <label for="genero">Femenino</label><br>
+                <input type="radio" name="genero" value="Otro" required>
+                <label for="genero">Otro</label>
+            </fieldset>
+            <fieldset>
+                <legend>De donde te enteraste?</legend>
+                <input type="radio" name="origen" value="Redes" required>
+                <label for="genero">Redes Sociales</label><br>
+                <input type="radio" name="origen" value="Tv" required>
+                <label for="genero">Tv</label><br>
+                <input type="radio" name="origen" value="Folletos" required>
+                <label for="genero">Folletos</label>
+                <input type="radio" name="origen" value="Conocido" required>
+                <label for="genero">Conocido</label><br>
+            </fieldset>
+            <textarea name="Comentarios" placeholder="Comentarios" required cols="60" rows="10"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</body>
+</html>
